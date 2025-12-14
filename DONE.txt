@@ -1,0 +1,14 @@
+products
+products
+(forms), (products) si (cart)
+products
+(products) si (move_page)
+products
+contacts
+products
+(cart)
+(move_page) si (forms)
+forms
+products
+(forms) si stopPropagation
+(forms)

@@ -185,7 +185,7 @@ html, body {
 #product > #weight {
     color: rgb(26, 45, 40);
     font-size: 1.2vw;
-    margin-top: -0.8vh;
+    margin-top: 0;
     margin-left: 2%;
 }
 

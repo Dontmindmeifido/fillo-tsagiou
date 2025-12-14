@@ -4,6 +4,8 @@
     <head>
         <link rel="stylesheet" href="attributes/css/navbar.css">
         <link rel="stylesheet" href="attributes/css/contacts.css">
+        <script src="attributes/js/move_page.js"></script>
+        <script src="attributes/js/forms.js"></script>
     </head>
     <body>
         <div id="navbar">
@@ -26,10 +28,10 @@
 
   <form>
     <label for="name">Your Name</label>
-    <input type="text" id="name" name="name" required>
+    <input type="text" name="name" required>
 
     <label for="email">Your Email</label>
-    <input type="email" id="email" name="email" required>
+    <input type="email" name="email" required>
 
     <label for="message">Your Message</label>
     <textarea id="message" name="message" rows="6" required></textarea>
@@ -50,6 +52,52 @@
     <p><strong>Phone:</strong> +30 210 555 1212</p>
     <p><em>Open Monday–Saturday, 9:00–18:00</em></p>
   </div>
+</section>
+
+<section id="contact">
+  <h2>Send us Your Resume</h2>
+
+  <div class="contact-info">
+    <h3>Join Our Team</h3>
+    <p><strong>Position:</strong> Tea Sommelier & Shop Assistants</p>
+    <p>Passionate about blends? Send your CV to: <br>  <strong>careers@fillotsagiou.com</strong> <br> Or apply via our online form below!</p>
+    <p><em>Previous experience with herbs is a plus.</em></p>
+  </div>
+
+  <form>
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="age">Age</label>
+    <input type="range" id="age" name="age" required>
+
+    <label for="experience">Experience with Herbs</label>
+    <input type="number" id="experience" name="experience">
+
+
+    <label for="full-time">Work Regime</label>
+    <label for="part-time" style="position: absolute"></label>
+    <p> <input type="radio" id="part-time" name="work-regime" required> Part-Time <br>
+        <input type="radio" id="full-time" name="work-regime" required> Full-Time</p>
+
+    <label for="before">Have You Applied to Us Before? <input type="checkbox" id="before" name="before"></label>
+
+    <label for="position">What Position are You Applying for?</label>
+    <select name="position" id="position">
+      <option value="Tea Somellier">Tea Somellier</option>
+      <option value="Shop Assistant">Shop Assistant</option>
+    </select>
+
+    <label for="more">Anything More We Should Know About You?</label>
+    <textarea id="more" name="more" rows="6"></textarea>
+
+    <div class="send-dropdown">
+      <button class="send-toggle" id="application-send">Send Application</button>
+    </div>
+  </form>
 </section>
 
 

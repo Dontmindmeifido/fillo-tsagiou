@@ -4,7 +4,7 @@
 }
 
 #column-split > #section-container {
-    margin-top: 200px;
+    margin-top: -70px;
     grid-column-start: 2;
 
     display: grid;
@@ -12,6 +12,22 @@
     column-gap: 0px;
 }
 
+
+#product > .addcart {
+    width: 90%;
+    font-size: 1.5vw;
+    font-family: 'Courier New';
+
+    display: block;
+    margin: 0 auto;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    
+    background-color: rgba(242, 224, 203, 0.251);
+    border-color: rgba(146, 102, 48, 0);
+    box-shadow: none;
+    border-radius: 10%;
+}
 
 #product > img {
     width: 90%;
@@ -53,12 +69,12 @@
 }
 
 #product:hover {
-    box-shadow: 10px 10px rgba(0, 0, 0, 0.32);
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.32);
 }
 
 #column-split > #summary {
     margin: 0 auto;
-    margin-top: 5vh;
+    margin-top: 0px;
     margin-left: auto;
     font-size: large;
     text-decoration: none;
@@ -75,9 +91,8 @@
 }
 
 #section-name {
-    position: absolute;
     margin-top: 0px;
-    margin-left: 25vw;
+    margin-left: 5vw;
 }
 
 #section-container {
@@ -107,6 +122,7 @@
 @media (max-width: 800px) {
     H1 { font-size: 150%; }
     p { font-size: 70%; }
+    #column-split > #section-container { margin-top: -40px; } 
 }
 @media (max-width: 500px) {
     H1 { font-size: 140%; }
