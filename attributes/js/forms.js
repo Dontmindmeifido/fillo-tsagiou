@@ -10,14 +10,29 @@ window.onload = () => {
         let position = document.getElementById("position").value
         let more = document.getElementById("more").value
 
-        // nume: >=2 letters, 2 words, captialized
-        // email: has(@), has(. after @)
-        // age: only(numbers)
-        // experience: only(numbers)
-        // ----
-        // ----
-        // ----
-        // more: only(any)
+        // Regex + LOGIC
+        let re = /\w+/g;
+        name = name.match(re)
+        if (name.length < 2) {
+            alert("Please introduce full name!")
+        } else if (name[0][0].toLowerCase() == name[0][0] || name[1][0].toLowerCase() == name[1][0]) {
+            alert("Please write your name in correct casing!")
+        } else if (name[0].length < 2 || name[1].length < 2) {
+            alert("Please write your name correctly!")
+        }
+
+        // Pure regex!!
+        re = /^\w+@\w+\.com/g;
+        if (!re.test(email)) {
+            alert("Please write a valid email adress!")
+        }
+
+        // This also handles gracefully negative numbers!! Let's go!! I am going insane.
+        re = /^\d+$/g;
+        if (!re.test(experience)) {
+            alert("Please write a valid experience!")
+        }
+
         if (age < 18 || age > 64) {
             alert("Sorry! Your age does not comply with our current requirements. All good! Life moves on i guess.")
         }

@@ -141,3 +141,7 @@ button:hover {
   background: #fffefc;
 }
 
+.contact-info p {
+  margin-top: -20px;
+}
+

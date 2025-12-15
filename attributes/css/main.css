@@ -44,6 +44,9 @@ html, body {
 #navbar a {
     color: rgb(255, 255, 255);
 }
+#navbar * {
+    color: rgb(255, 255, 255);
+}
 
 #section2 H1 {
     width: 100vw;
@@ -205,10 +208,6 @@ html, body {
     transition: 0.25s ease-out;
 
     transform: translateY(-7vh);
-}
-
-#product:hover {
-    box-shadow: 10px 10px rgba(0, 0, 0, 0.32);
 }
 
 #showreel {

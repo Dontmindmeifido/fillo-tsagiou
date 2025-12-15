@@ -1,5 +1,5 @@
 let pages = new Array() // Use of array class
-pages.push("index.html")
+pages.push("main.html")
 pages.push("about_us.html")
 pages.push("products.html")
 pages.push("locations.html")

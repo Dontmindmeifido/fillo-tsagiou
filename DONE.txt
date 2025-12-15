@@ -12,3 +12,8 @@ forms
 products
 (forms) si stopPropagation
 (forms)
+
+ajax - yes
+login/logout - yes
+
+Bravo!

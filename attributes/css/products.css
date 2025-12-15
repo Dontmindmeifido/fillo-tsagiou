@@ -16,7 +16,8 @@
 #product > .addcart {
     width: 90%;
     font-size: 1.5vw;
-    font-family: 'Courier New';
+    font-family: 'Times New Roman', Times, serif;
+    word-spacing: 0;
 
     display: block;
     margin: 0 auto;
