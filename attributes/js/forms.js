@@ -10,7 +10,14 @@ window.onload = () => {
         let position = document.getElementById("position").value
         let more = document.getElementById("more").value
 
-
+        // nume: >=2 letters, 2 words, captialized
+        // email: has(@), has(. after @)
+        // age: only(numbers)
+        // experience: only(numbers)
+        // ----
+        // ----
+        // ----
+        // more: only(any)
         if (age < 18 || age > 64) {
             alert("Sorry! Your age does not comply with our current requirements. All good! Life moves on i guess.")
         }
