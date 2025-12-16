@@ -35,6 +35,8 @@ body {
     font-size: 100%;
 
     font-family: 'Times New Roman', Times, serif;
+
+    cursor: pointer;
 }
 #logout:hover {
     background-color: rgba(0, 0, 0, 0.181);

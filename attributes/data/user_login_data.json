@@ -1,6 +1,6 @@
 {
 "data": {
-    "login": ["Ruslan", "Andrei"],
-    "password": ["Ruslan", "Andrei"]
+    "login": ["Ruslan", "Admin"],
+    "password": ["Ruslan112", "Password"]
 } 
 }
