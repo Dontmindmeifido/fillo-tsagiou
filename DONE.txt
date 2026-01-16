@@ -1,6 +1,6 @@
 products
 products
-(forms), (products) si (cart)
+(forms), (products) si (forms)
 products
 (products) si (move_page)
 products

@@ -1,6 +1,6 @@
 window.onload = () => {
     let ageobj = document.getElementById("age")
-    let agediv = document.getElementById("agenum")
+    let agediv = document.getElementsByClassName("agenum")[0]
 
     document.getElementById("application-send").addEventListener("click", (event) => {
         let name = document.getElementById("name").value
