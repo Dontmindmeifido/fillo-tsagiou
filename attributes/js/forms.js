@@ -1,4 +1,7 @@
 window.onload = () => {
+    let ageobj = document.getElementById("age")
+    let agediv = document.getElementById("agenum")
+
     document.getElementById("application-send").addEventListener("click", (event) => {
         let name = document.getElementById("name").value
         let email = document.getElementById("email").value
@@ -34,11 +37,15 @@ window.onload = () => {
         }
 
         if (age < 18 || age > 64) {
-            alert("Sorry! Your age does not comply with our current requirements. All good! Life moves on i guess.")
+            alert("Sorry! Your age does not comply with our current requirements.")
         }
         if (experience <= 2) {
-            alert("Sorry! Your current tea-ful experience does not match what we are looking for! All good, come back next year with more experience!")
+            alert("Sorry! Your current tea experience does not match what we are looking for! All good, come back next year with more experience!")
         }
+    })
+    
+    document.getElementById("age").addEventListener("change", () => {
+        agediv.innerHTML = ageobj.value
     })
 
     document.getElementById("application-send").addEventListener("mouseover", (event) => {
@@ -51,5 +58,11 @@ window.onload = () => {
 
         let today = new Date()
         event.target.innerHTML = `Send Application on ${today.getFullYear()}-${today.getMonth()}-${today.getDate()}`
+    })
+
+    // Logout hack, prevents window.onload overwriting
+    document.getElementById("logout").addEventListener("click", () => {
+        localStorage.setItem("loggedin", "false")
+        window.location.href = "http://127.0.0.1:5500/index.html"
     })
 }

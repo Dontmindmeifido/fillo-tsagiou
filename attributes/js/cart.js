@@ -80,6 +80,7 @@ window.onload = () => {
     for (let i = 0; i < buttons.length; i++) {
         buttons[i].addEventListener("click", (event) => {
             handle_add(buttons[i].parentElement, buttons[i])
+            event.stopPropagation()
         })
     }
 
