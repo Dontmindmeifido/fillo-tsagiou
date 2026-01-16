@@ -7,7 +7,6 @@ window.onload = () => {
         xhr.open("GET", "http://127.0.0.1:5500/attributes/data/user_login_data.json", false) // false for no ascynchroneity
         let jsonResponse = ""
         xhr.onload = function() {
-                // RAW AJAX returns a string. You must parse it manually.
                 jsonResponse = xhr.responseText
         }
         xhr.send()
@@ -35,7 +34,6 @@ window.onload = () => {
             xhr.open("GET", "http://127.0.0.1:5500/attributes/data/user_login_data.json", false) // false for no ascynchroneity
             let jsonResponse = ""
             xhr.onload = function() {
-                    // RAW AJAX returns a string. You must parse it manually.
                     jsonResponse = xhr.responseText
             }
             xhr.send()

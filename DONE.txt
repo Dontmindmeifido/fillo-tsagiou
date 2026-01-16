@@ -10,7 +10,7 @@ products
 (move_page) si (forms)
 forms
 products
-(forms) si stopPropagation
+(forms) si (button in cart page)
 (forms)
 
 ajax - yes
